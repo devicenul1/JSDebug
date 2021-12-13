@@ -1,0 +1,24 @@
+{
+  "name": "jsdebug",
+  "version": "1.0.0",
+  "description": "for will",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/testFunction.js",
+    "prestart": "npm run build",
+    "build": "tsc",
+    "test": "mocha --require ts-node/register test/**/*.ts",
+    "pretest": "npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.3.0",
+    "@types/mocha": "^9.0.0",
+    "chai": "^4.3.4",
+    "cross-env": "^7.0.3",
+    "mocha": "^9.1.3",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.3"
+  }
+}
